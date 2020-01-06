@@ -14,9 +14,9 @@
 请输出四舍五入保留1位小数的结果。
 */
 
-
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 int main(int argc, char const *argv[])
 {
 	int *arr;

@@ -42,6 +42,7 @@ int main(int argc, char const *argv[])
 	{
 		cout <<arr[i]<<" ";
 	}
+	cout <<endl;
 
 
 	return 0;
