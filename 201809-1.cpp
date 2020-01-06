@@ -22,6 +22,7 @@
 */
 
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
 
@@ -32,15 +33,23 @@ int main(int argc, char const *argv[])
 	cin>>n;
 	//if(n<2||n>1000)
 	//	return ;
-
+	arr=(int*)malloc(sizeof(int)*n);
+	res=(int*)malloc(sizeof(int)*n);
 	for (int i = 0; i < n; ++i)
 	{
 		cin>>arr[i];
 	}
 
+	res[0]=(arr[0]+arr[1])/2;
+	for (int i = 1; i < n-1; ++i)
+	{
+		res[i]=(arr[i-1]+arr[i]+arr[i+1])/3;
+	}
+	res[n-1]=(arr[n-2]+arr[n-1])/2;
+	
 	for (int i = 0; i < n; ++i)
 	{
-		cout <<arr[i]<<" ";
+		cout <<res[i]<<" ";
 	}
 	cout <<endl;
 
