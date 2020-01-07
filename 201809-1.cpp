@@ -31,8 +31,7 @@ int main(int argc, char const *argv[])
 	int n;
 	int *arr,*res;
 	cin>>n;
-	//if(n<2||n>1000)
-	//	return ;
+
 	arr=(int*)malloc(sizeof(int)*n);
 	res=(int*)malloc(sizeof(int)*n);
 	for (int i = 0; i < n; ++i)

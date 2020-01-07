@@ -5,10 +5,10 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "g++ build active file",
+            "label": "gcc build active file",
             "command": "/usr/bin/g++",
             "args": [
-                "-std=c99",
+                "-std=c++11",
                 "-g",
                 "${file}",
                 "-o",

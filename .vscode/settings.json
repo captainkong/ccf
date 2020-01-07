@@ -1,4 +1,3 @@
 {
-    "remote.WSL.debug": true,
-    "remote.WSL.fileWatcher.polling": true
+    "editor.fontSize": 20
 }
